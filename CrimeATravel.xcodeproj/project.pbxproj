@@ -42,6 +42,10 @@
 		2061F69F2790B3AE0041C331 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F69E2790B3AE0041C331 /* SnapKit */; };
 		2061F6A22790B41A0041C331 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F6A12790B41A0041C331 /* Kingfisher */; };
 		2061F6A52790B45A0041C331 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F6A42790B45A0041C331 /* KeychainSwift */; };
+		20DBAAC42795B759000F4049 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAC22795B759000F4049 /* LoginVC.swift */; };
+		20DBAAC52795B759000F4049 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DBAAC32795B759000F4049 /* LoginVC.xib */; };
+		20DBAACA2795B7A6000F4049 /* CodeConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */; };
+		20DBAACB2795B7A6000F4049 /* CodeConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */; };
 		20E35AAA2790C17F00C629A0 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E35AA82790C17F00C629A0 /* OnboardingVC.swift */; };
 		20E35AAB2790C17F00C629A0 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E35AA92790C17F00C629A0 /* OnboardingVC.xib */; };
 		20E35AAF2790C3A800C629A0 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E35AAD2790C3A800C629A0 /* OnboardingCollectionViewCell.swift */; };
@@ -83,6 +87,10 @@
 		2061F6952790AF510041C331 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		2061F6962790AF510041C331 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2061F69B2790AFC00041C331 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		20DBAAC22795B759000F4049 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		20DBAAC32795B759000F4049 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeConfirmationVC.swift; sourceTree = "<group>"; };
+		20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeConfirmationVC.xib; sourceTree = "<group>"; };
 		20E35AA82790C17F00C629A0 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		20E35AA92790C17F00C629A0 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		20E35AAD2790C3A800C629A0 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +240,7 @@
 		2061F6922790AEC90041C331 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				20DBAAC12795B696000F4049 /* Auth flow */,
 				20E35AA72790C15E00C629A0 /* Onboarding */,
 				2061F69A2790AFC00041C331 /* TabBar Flow */,
 			);
@@ -254,6 +263,33 @@
 				2061F69B2790AFC00041C331 /* TabBarController.swift */,
 			);
 			path = "TabBar Flow";
+			sourceTree = "<group>";
+		};
+		20DBAAC12795B696000F4049 /* Auth flow */ = {
+			isa = PBXGroup;
+			children = (
+				20DBAAC62795B75F000F4049 /* Login */,
+				20DBAAC72795B77E000F4049 /* CodeConfirmation */,
+			);
+			path = "Auth flow";
+			sourceTree = "<group>";
+		};
+		20DBAAC62795B75F000F4049 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20DBAAC22795B759000F4049 /* LoginVC.swift */,
+				20DBAAC32795B759000F4049 /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		20DBAAC72795B77E000F4049 /* CodeConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */,
+				20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */,
+			);
+			path = CodeConfirmation;
 			sourceTree = "<group>";
 		};
 		20E35AA72790C15E00C629A0 /* Onboarding */ = {
@@ -309,6 +345,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = CrimeATravel;
 				TargetAttributes = {
 					2061F63F2790ADA40041C331 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -343,9 +380,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DBAAC52795B759000F4049 /* LoginVC.xib in Resources */,
 				2061F6502790ADA60041C331 /* LaunchScreen.storyboard in Resources */,
 				2061F64D2790ADA60041C331 /* Assets.xcassets in Resources */,
 				20E35AB02790C3A800C629A0 /* OnboardingCollectionViewCell.xib in Resources */,
+				20DBAACB2795B7A6000F4049 /* CodeConfirmationVC.xib in Resources */,
 				20E35AAB2790C17F00C629A0 /* OnboardingVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,10 +407,12 @@
 				2061F6792790AEC10041C331 /* TheeyeAPI.swift in Sources */,
 				2061F67A2790AEC10041C331 /* NetworkAgent.swift in Sources */,
 				2061F68E2790AEC10041C331 /* LogoBarButtonItem.swift in Sources */,
+				20DBAAC42795B759000F4049 /* LoginVC.swift in Sources */,
 				2061F67B2790AEC10041C331 /* AppCache.swift in Sources */,
 				2061F6822790AEC10041C331 /* UIViewController+Ex.swift in Sources */,
 				2061F6842790AEC10041C331 /* String+Ex.swift in Sources */,
 				2061F6972790AF510041C331 /* WebViewController.swift in Sources */,
+				20DBAACA2795B7A6000F4049 /* CodeConfirmationVC.swift in Sources */,
 				2061F67D2790AEC10041C331 /* Responses.swift in Sources */,
 				2061F69C2790AFC00041C331 /* TabBarController.swift in Sources */,
 				2061F67E2790AEC10041C331 /* Keychain.swift in Sources */,
@@ -546,7 +587,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -574,7 +615,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

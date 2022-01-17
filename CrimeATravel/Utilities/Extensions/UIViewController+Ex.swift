@@ -1,9 +1,9 @@
 //
 //  UIViewController+Ex.swift
-//  Theeye
+//  CrimeATravel
 //
 //  Created by Murodjon Ibrohimov on 04.04.2021.
-//  Copyright © 2021 Theeye. All rights reserved.
+//  Copyright © 2022 CrimeATravel. All rights reserved.
 //
 
 import UIKit

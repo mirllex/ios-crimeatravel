@@ -1,9 +1,9 @@
 //
 //  Defaults.swift
-//  Theeye
+//  CrimeATravel
 //
-//  Created by Murad Ibrohimov on 13.11.21.
-//  Copyright © 2021 Theeye. All rights reserved.
+//  Created by Murad Ibrohimov on 13.11.22.
+//  Copyright © 2022 CrimeATravel. All rights reserved.
 //
 
 import UIKit

@@ -3,6 +3,7 @@
 //  CrimeATravel
 //
 //  Created by Murad Ibrohimov on 13.01.22.
+//  Copyright © 2022 CrimeATravel. All rights reserved.
 //
 
 import UIKit

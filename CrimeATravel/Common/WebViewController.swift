@@ -1,9 +1,9 @@
 //
 //  WebViewController.swift
-//  Theeye
+//  CrimeATravel
 //
-//  Created by Murodjon Ibrohimov on 8.06.21.
-//  Copyright © 2021 Theeye. All rights reserved.
+//  Created by Murodjon Ibrohimov on 8.06.22.
+//  Copyright © 2022 CrimeATravel. All rights reserved.
 //
 
 import UIKit

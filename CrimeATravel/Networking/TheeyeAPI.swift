@@ -1,16 +1,16 @@
 //
-//  TheeyeAPI.swift
-//  Theeye
+//  CrimeATravelAPI.swift
+//  CrimeATravel
 //
-//  Created by Murad Ibrohimov on 13.11.21.
-//  Copyright © 2021 Theeye. All rights reserved.
+//  Created by Murad Ibrohimov on 13.11.22.
+//  Copyright © 2022 CrimeATravel. All rights reserved.
 //
 
 import UIKit
 
-class TheeyeAPI: NetworkAgent {
+class CrimeATravelAPI: NetworkAgent {
     
-    static let shared = TheeyeAPI()
+    static let shared = CrimeATravelAPI()
     
     let session: URLSession
     
