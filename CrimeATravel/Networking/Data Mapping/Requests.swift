@@ -12,27 +12,19 @@ import SwiftUI
 //MARK: -Authorization
 
 struct SignInRequest: Encodable {
-    let email: String
-    let password: String
-}
-
-struct SendDeviceIDRequest: Encodable {
-    let deviceID: String
+    let phone: String
     
     enum CodingKeys: String, CodingKey {
-        case deviceID = "token"
+        case phone = "tel"
     }
 }
 
-struct CloseSessionRequest: Encodable {
-    let sessionID: String
+struct CodeConfirmationRequest: Encodable {
+    let phone: String
+    let smsCode: String
     
     enum CodingKeys: String, CodingKey {
-        case sessionID = "id"
+        case phone = "tel"
+        case smsCode = "vercode"
     }
-}
-
-struct UpdateZoomerProfileImageRequest: Encodable {
-    let img: String
-    let type: String = "jpeg"
 }

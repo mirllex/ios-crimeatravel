@@ -36,14 +36,14 @@ struct KeychainProperty {
 
 class Keychain {
     
-    @KeychainProperty(key: "Token")
-    static var token: String?
+    @KeychainProperty(key: "AccessToken")
+    static var accessToken: String?
     
     @KeychainProperty(key: "Device_id")
     static var deviceToken: String?
     
     class func reset() {
-        token = nil
+        accessToken = nil
         deviceToken = nil
     }
 }

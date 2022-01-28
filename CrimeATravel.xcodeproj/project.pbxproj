@@ -10,7 +10,7 @@
 		2061F6442790ADA40041C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F6432790ADA40041C331 /* AppDelegate.swift */; };
 		2061F64D2790ADA60041C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2061F64C2790ADA60041C331 /* Assets.xcassets */; };
 		2061F6502790ADA60041C331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2061F64E2790ADA60041C331 /* LaunchScreen.storyboard */; };
-		2061F6792790AEC10041C331 /* TheeyeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F65A2790AEC10041C331 /* TheeyeAPI.swift */; };
+		2061F6792790AEC10041C331 /* CrimeATravelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F65A2790AEC10041C331 /* CrimeATravelAPI.swift */; };
 		2061F67A2790AEC10041C331 /* NetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F65B2790AEC10041C331 /* NetworkAgent.swift */; };
 		2061F67B2790AEC10041C331 /* AppCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F65C2790AEC10041C331 /* AppCache.swift */; };
 		2061F67C2790AEC10041C331 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2061F65E2790AEC10041C331 /* Requests.swift */; };
@@ -42,10 +42,13 @@
 		2061F69F2790B3AE0041C331 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F69E2790B3AE0041C331 /* SnapKit */; };
 		2061F6A22790B41A0041C331 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F6A12790B41A0041C331 /* Kingfisher */; };
 		2061F6A52790B45A0041C331 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2061F6A42790B45A0041C331 /* KeychainSwift */; };
-		20DBAAC42795B759000F4049 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAC22795B759000F4049 /* LoginVC.swift */; };
-		20DBAAC52795B759000F4049 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DBAAC32795B759000F4049 /* LoginVC.xib */; };
+		20DBAAC42795B759000F4049 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAC22795B759000F4049 /* SigninVC.swift */; };
+		20DBAAC52795B759000F4049 /* SigninVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DBAAC32795B759000F4049 /* SigninVC.xib */; };
 		20DBAACA2795B7A6000F4049 /* CodeConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */; };
 		20DBAACB2795B7A6000F4049 /* CodeConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */; };
+		20DBAAD4279770A2000F4049 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 20DBAAD3279770A2000F4049 /* IQKeyboardManagerSwift */; };
+		20DBAAD72798724B000F4049 /* CTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAD62798724B000F4049 /* CTButton.swift */; };
+		20DBAAD927987DD8000F4049 /* DisabledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBAAD827987DD8000F4049 /* DisabledTextField.swift */; };
 		20E35AAA2790C17F00C629A0 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E35AA82790C17F00C629A0 /* OnboardingVC.swift */; };
 		20E35AAB2790C17F00C629A0 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E35AA92790C17F00C629A0 /* OnboardingVC.xib */; };
 		20E35AAF2790C3A800C629A0 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E35AAD2790C3A800C629A0 /* OnboardingCollectionViewCell.swift */; };
@@ -58,7 +61,7 @@
 		2061F64C2790ADA60041C331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2061F64F2790ADA60041C331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2061F6512790ADA60041C331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2061F65A2790AEC10041C331 /* TheeyeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheeyeAPI.swift; sourceTree = "<group>"; };
+		2061F65A2790AEC10041C331 /* CrimeATravelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeATravelAPI.swift; sourceTree = "<group>"; };
 		2061F65B2790AEC10041C331 /* NetworkAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAgent.swift; sourceTree = "<group>"; };
 		2061F65C2790AEC10041C331 /* AppCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCache.swift; sourceTree = "<group>"; };
 		2061F65E2790AEC10041C331 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
@@ -87,10 +90,12 @@
 		2061F6952790AF510041C331 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		2061F6962790AF510041C331 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2061F69B2790AFC00041C331 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		20DBAAC22795B759000F4049 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		20DBAAC32795B759000F4049 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		20DBAAC22795B759000F4049 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		20DBAAC32795B759000F4049 /* SigninVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninVC.xib; sourceTree = "<group>"; };
 		20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeConfirmationVC.swift; sourceTree = "<group>"; };
 		20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeConfirmationVC.xib; sourceTree = "<group>"; };
+		20DBAAD62798724B000F4049 /* CTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTButton.swift; sourceTree = "<group>"; };
+		20DBAAD827987DD8000F4049 /* DisabledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledTextField.swift; sourceTree = "<group>"; };
 		20E35AA82790C17F00C629A0 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		20E35AA92790C17F00C629A0 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		20E35AAD2790C3A800C629A0 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2061F6A52790B45A0041C331 /* KeychainSwift in Frameworks */,
+				20DBAAD4279770A2000F4049 /* IQKeyboardManagerSwift in Frameworks */,
 				2061F6A22790B41A0041C331 /* Kingfisher in Frameworks */,
 				2061F69F2790B3AE0041C331 /* SnapKit in Frameworks */,
 			);
@@ -162,7 +168,7 @@
 		2061F6592790AEC10041C331 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				2061F65A2790AEC10041C331 /* TheeyeAPI.swift */,
+				2061F65A2790AEC10041C331 /* CrimeATravelAPI.swift */,
 				2061F65B2790AEC10041C331 /* NetworkAgent.swift */,
 				2061F65C2790AEC10041C331 /* AppCache.swift */,
 				2061F65D2790AEC10041C331 /* Data Mapping */,
@@ -191,6 +197,7 @@
 		2061F6632790AEC10041C331 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				20DBAAD527987238000F4049 /* CustomViews */,
 				2061F6642790AEC10041C331 /* CollectionView */,
 				2061F6672790AEC10041C331 /* Extensions */,
 				2061F6722790AEC10041C331 /* Views */,
@@ -277,8 +284,8 @@
 		20DBAAC62795B75F000F4049 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				20DBAAC22795B759000F4049 /* LoginVC.swift */,
-				20DBAAC32795B759000F4049 /* LoginVC.xib */,
+				20DBAAC22795B759000F4049 /* SigninVC.swift */,
+				20DBAAC32795B759000F4049 /* SigninVC.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -286,10 +293,27 @@
 		20DBAAC72795B77E000F4049 /* CodeConfirmation */ = {
 			isa = PBXGroup;
 			children = (
+				20DBAACC2795D85B000F4049 /* Views */,
 				20DBAAC82795B7A6000F4049 /* CodeConfirmationVC.swift */,
 				20DBAAC92795B7A6000F4049 /* CodeConfirmationVC.xib */,
 			);
 			path = CodeConfirmation;
+			sourceTree = "<group>";
+		};
+		20DBAACC2795D85B000F4049 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20DBAAD527987238000F4049 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				20DBAAD62798724B000F4049 /* CTButton.swift */,
+				20DBAAD827987DD8000F4049 /* DisabledTextField.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		20E35AA72790C15E00C629A0 /* Onboarding */ = {
@@ -331,6 +355,7 @@
 				2061F69E2790B3AE0041C331 /* SnapKit */,
 				2061F6A12790B41A0041C331 /* Kingfisher */,
 				2061F6A42790B45A0041C331 /* KeychainSwift */,
+				20DBAAD3279770A2000F4049 /* IQKeyboardManagerSwift */,
 			);
 			productName = CrimeATravel;
 			productReference = 2061F6402790ADA40041C331 /* CrimeATravel.app */;
@@ -365,6 +390,7 @@
 				2061F69D2790B3AE0041C331 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2061F6A02790B41A0041C331 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				2061F6A32790B45A0041C331 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				20DBAAD2279770A2000F4049 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 2061F6412790ADA40041C331 /* Products */;
 			projectDirPath = "";
@@ -380,7 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DBAAC52795B759000F4049 /* LoginVC.xib in Resources */,
+				20DBAAC52795B759000F4049 /* SigninVC.xib in Resources */,
 				2061F6502790ADA60041C331 /* LaunchScreen.storyboard in Resources */,
 				2061F64D2790ADA60041C331 /* Assets.xcassets in Resources */,
 				20E35AB02790C3A800C629A0 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -404,10 +430,11 @@
 				2061F6802790AEC10041C331 /* Pagging3DEffectFlowLayout.swift in Sources */,
 				20E35AAA2790C17F00C629A0 /* OnboardingVC.swift in Sources */,
 				2061F6992790AF510041C331 /* BaseViewController.swift in Sources */,
-				2061F6792790AEC10041C331 /* TheeyeAPI.swift in Sources */,
+				2061F6792790AEC10041C331 /* CrimeATravelAPI.swift in Sources */,
 				2061F67A2790AEC10041C331 /* NetworkAgent.swift in Sources */,
 				2061F68E2790AEC10041C331 /* LogoBarButtonItem.swift in Sources */,
-				20DBAAC42795B759000F4049 /* LoginVC.swift in Sources */,
+				20DBAAC42795B759000F4049 /* SigninVC.swift in Sources */,
+				20DBAAD72798724B000F4049 /* CTButton.swift in Sources */,
 				2061F67B2790AEC10041C331 /* AppCache.swift in Sources */,
 				2061F6822790AEC10041C331 /* UIViewController+Ex.swift in Sources */,
 				2061F6842790AEC10041C331 /* String+Ex.swift in Sources */,
@@ -430,6 +457,7 @@
 				2061F6872790AEC10041C331 /* UIImageView+Ex.swift in Sources */,
 				2061F6832790AEC10041C331 /* UIView+Ex.swift in Sources */,
 				2061F68D2790AEC10041C331 /* DatePicker.swift in Sources */,
+				20DBAAD927987DD8000F4049 /* DisabledTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +695,14 @@
 				minimumVersion = 20.0.0;
 			};
 		};
+		20DBAAD2279770A2000F4049 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -684,6 +720,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2061F6A32790B45A0041C331 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		20DBAAD3279770A2000F4049 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20DBAAD2279770A2000F4049 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

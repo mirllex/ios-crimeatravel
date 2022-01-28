@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        
+        Defaults.reset()
         configureNavigationBar()
-        showAuth()
+        Defaults.isAuthorized ? showHome() : showAuth()
+        
         window?.makeKeyAndVisible()
         return true
     }
@@ -38,18 +44,22 @@ extension AppDelegate {
         }
     }
     
-    func showHome(completion: (() -> Void)? = nil) {
-        let tabbarVC = TabBarController()
-        switchRootViewController(rootViewController: tabbarVC, animated: true, completion: completion)
-    }
-    
     func showAuth(completion: (() -> Void)? = nil) {
         Keychain.reset()
         Defaults.reset()
-        let nc = UINavigationController(rootViewController: LoginVC())
-        nc.navigationBar.setBackgroundColor(.clear)
-        nc.navigationBar.tintColor = .black
+        let nc = UINavigationController(rootViewController: SigninVC())
+        let appearence = UINavigationBarAppearance()
+        appearence.configureWithTransparentBackground()
+        appearence.backgroundColor = .clear
+        nc.navigationBar.standardAppearance = appearence
+        nc.navigationBar.scrollEdgeAppearance = appearence
+        nc.navigationBar.tintColor = .white
         switchRootViewController(rootViewController: nc, animated: true, completion: completion)
+    }
+    
+    func showHome(completion: (() -> Void)? = nil) {
+        let tabbarVC = TabBarController()
+        switchRootViewController(rootViewController: tabbarVC, animated: true, completion: completion)
     }
     
     private func switchRootViewController(rootViewController: UIViewController, animated: Bool, completion: (() -> Void)?) {

@@ -117,8 +117,8 @@ extension BaseViewController: BaseViewDelegate {
     
     @objc
     func showError(_ error: String, cancelHandler: ((UIAlertAction) -> Void)? = nil) {
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Hide", style: .cancel, handler: cancelHandler))
+        let alert = UIAlertController(title: "Ошибка", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Скрыть", style: .cancel, handler: cancelHandler))
         if presentedViewController === loadingView || presentedViewController === emptyView {
             dismiss(animated: true) { [weak self] in
                 self?.present(alert, animated: true, completion: nil)
@@ -130,8 +130,8 @@ extension BaseViewController: BaseViewDelegate {
     
     @objc
     func showSuccess(_ message: String, cancelHandler: ((UIAlertAction) -> Void)? = nil) {
-        let alert = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Hide", style: .cancel, handler: cancelHandler))
+        let alert = UIAlertController(title: "Успешно", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Скрыть", style: .cancel, handler: cancelHandler))
         if presentedViewController === loadingView || presentedViewController === emptyView {
             dismiss(animated: true) { [weak self] in
                 self?.present(alert, animated: true, completion: nil)

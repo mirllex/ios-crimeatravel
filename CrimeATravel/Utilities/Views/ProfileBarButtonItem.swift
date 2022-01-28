@@ -33,7 +33,7 @@ final class ProfileBarButtonItem: UIBarButtonItem {
             .resizeImage(to: button.frame.size)
         button.setBackgroundImage(image, for: .normal)
 
-        label.text = Defaults.zoomerProfile?.initials
+//        label.text = Defaults.zoomerProfile?.initials
         label.font = .systemFont(ofSize: 13, weight: .medium)
         label.textColor = .white
         button.addSubview(label)

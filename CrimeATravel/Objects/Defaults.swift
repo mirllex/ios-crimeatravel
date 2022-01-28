@@ -71,20 +71,8 @@ class Defaults {
     @DefaultsProperty(key: "IsAuthorized", defaultValue: false)
     static var isAuthorized: Bool
     
-    @DefaultsProperty(key: "UserRole", defaultValue: nil)
-    static var userRole: String?
-    
-    @DefaultsProperty(key: "NeedSendPushToken", defaultValue: true)
-    static var doesNeedSendPushToken: Bool
-    
-    @DefaultsPropertyCodable(key: "ZoomerProfile")
-    static var zoomerProfile: GetZoomerResponse.ZoomerInfo?
-    
     class func reset() {
         isAuthorized = false
-        userRole = nil
-        doesNeedSendPushToken = true
-        zoomerProfile = nil
     }
     
 }
